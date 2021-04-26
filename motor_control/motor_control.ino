@@ -44,8 +44,7 @@ void setup()
     
     InChar = Serial.read();
 
-    result_Left = motordrive_left.readInputRegisters(0x0078, 16);
-    result_Right = motordrive_right.readInputRegisters(0x0078, 16);
+  
 
     uint16_t clear, red, green, blue;
     TCS.getRawData(&red, &green, &blue, &clear);
